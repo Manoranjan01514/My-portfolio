@@ -811,8 +811,35 @@ footer p{
     transform: translateY(-5px);
     color: black;
 }
-.back-to-top-btn{
-    height: 50px;
+.back-to-top-btn-con{
+    height: 60px;
     width: 200px;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
 }
+.b2t-btn{
+    position: sticky;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #09090f;
+    border: 1px solid #292938;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.b2t-btn:hover{
+    transition: all .5s ease-in-out;
+    background-color: #8b5cf6;
+    border: 1px solid aquamarine;
+    transform: scale(1.15);
+}
+.b2t-btn a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 
