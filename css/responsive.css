@@ -1,0 +1,12 @@
+@media(max-width:1279px){
+    .navbar, .hero,.about ,.Education,.skills,.projects,.contact,footer{
+        display: none;
+    }
+    .msg-con{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
