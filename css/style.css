@@ -146,7 +146,6 @@ header {
 .hero{
     height: 800px;
     width: 100vw;
-    background-image: url(/images/hero_image.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -364,7 +363,6 @@ header {
 .abt-img{
     height: 400px;
     width: 300px;
-    background-image: url(/images/abt-img.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 50px;
@@ -629,7 +627,7 @@ header {
     height: 180px;
     width: 235px;
     border-radius: 15px;
-    background-image: url(/images/laptop-img.png);
+    background-image: url(images/laptop-img.png);
     background-size: cover;
     background-position: center;
 }
@@ -683,7 +681,7 @@ header {
 .py-logo{
     height: 110px;
     width: 110px;
-    background-image: url(/images/3d-python.webp);
+    background-image: url(images/3d-python.webp);
     background-size: cover;
     background-position: center;
     border-radius:10px ;
@@ -783,7 +781,7 @@ header {
 .vscode-logo{
     height: 110px;
     width: 110px;
-    background-image: url(/images/vscode.png);
+    background-image: url(images/vscode.png);
     background-size: cover;
     background-position: center;
     border-radius:10px ;
@@ -822,7 +820,7 @@ header {
 .acc-img{
     height: 130px;
     width: 150px;
-    background-image: url(/images/atoms.webp);
+    background-image: url(images/atoms.webp);
     background-size: cover;
     background-position: center;
 }
@@ -955,7 +953,6 @@ header {
 .mail-img{
     height: 200px;
     width: 250px;
-    background-image: url(/images/mail-img.png);
     background-size: cover;
     background-position: center;
 }
@@ -1041,7 +1038,7 @@ header {
     height: 100px;
     width: 100px;
     color: #ffffff;
-    background-image: url(/images/free-paper-plane-icon.png);
+    background-image: url(images/free-paper-plane-icon.png);
     background-size: cover;
     background-position: center;
 }
