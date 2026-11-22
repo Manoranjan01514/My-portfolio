@@ -5,18 +5,23 @@
 }
 body {
     background-color: #09090f;
+    overflow-x: hidden;
+    
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 header {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1000;
 }
 .navbar {
     position:fixed;
+    z-index: 1001;
     background-color: #11111f;
     height: 70px;
     width: 90%;
@@ -364,6 +369,7 @@ header {
     background-size: cover;
     border-radius: 50px;
     cursor: pointer;
+    animation: float 2s ease-in-out infinite ;
 }
 .abt-text{
     height: 500px;
@@ -894,9 +900,10 @@ header {
     background-color: red;
     border-radius: 30px;
     z-index: -1;
-    transition: .3s;
+    transition: .5s;
 }
 .acc-sub-logo-text-con:hover::after{
+    transition: .5s;
     width: 100%;
 }
 .acc-logo{
@@ -924,6 +931,168 @@ header {
     height: 100vh;
     width: 100vw;
     background-color: #09090f;
+}
+.mail-msg-con{
+    height: 450px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 80px 0 120px;
+}
+.mail{
+    height: 380px;
+    width: 450px;
+    background-color: #11111f;
+    border: 1px solid #292938;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    isolation: isolate;
+}
+.mail-img{
+    height: 200px;
+    width: 250px;
+    background-image: url(/images/mail-img.png);
+    background-size: cover;
+    background-position: center;
+}
+.m-logo-text{
+    height: 70px;
+    width: 90%;
+    border-radius: 15px;
+    background-color: #161622;
+    border: 1px solid #292938;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+
+}
+.m-logo-text::after{
+    content: "";
+    position: absolute;
+    height: 71px;
+    width: 100%;
+    border-radius: 15px;
+    background: red;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: 0.5s;
+}
+.m-logo-text:hover::after{
+    transition: 0.5s;
+    transform: scaleX(1);
+    
+}
+.ml-logo{
+    height: 70px;
+    width: 70px;
+    background-color: #292938;
+    border-radius: 15px;
+    font-size: 3rem;
+    color: #8b5cf6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    transition: 0.5s;
+}
+.ml-logo:hover{
+    transition: 0.5s;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+.ml-text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.ml-text p{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.m-logo-text a {
+    text-decoration: none;
+}
+.c-msg{
+    height: 450px;
+    width: 750px;
+    background-color: #11111f;
+    border: 1px solid #292938;
+    border-radius: 25px;
+}
+.planeicon-text-con{
+    height: 100px;
+    width: 97%;
+    margin: 30px 10px 10px 10px;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.plane-icon{
+    height: 100px;
+    width: 100px;
+    color: #ffffff;
+    background-image: url(/images/free-paper-plane-icon.png);
+    background-size: cover;
+    background-position: center;
+}
+.c-msg-text{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.c-msg-text hr{
+    border: none;
+    width: 150px;
+    height: 5px;
+    background-color: #8b5cf6;
+    border-radius: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.msg-input{
+    width: 600px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid #292938;
+    outline: none;
+    padding-left:25px ;
+    color: #a1a1aa;
+    background: #161622;
+    transition: .4s;
+}
+.msg-input:focus{
+    transition: .4s;
+    border: 1px solid rgb(210, 132, 16);
+}
+#message{
+    height: 100px;
+    padding: 20px;
+}
+#btn{
+    height: 40px;
+    width: 550px;
+    background: rgb(210, 132, 16);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 footer{
     background-color: #11111f;
