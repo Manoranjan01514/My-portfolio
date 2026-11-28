@@ -681,7 +681,6 @@ header {
 .py-logo{
     height: 110px;
     width: 110px;
-    background-image: url(images/3d-python.webp);
     background-size: cover;
     background-position: center;
     border-radius:10px ;
@@ -781,7 +780,6 @@ header {
 .vscode-logo{
     height: 110px;
     width: 110px;
-    background-image: url(images/vscode.png);
     background-size: cover;
     background-position: center;
     border-radius:10px ;
@@ -820,7 +818,6 @@ header {
 .acc-img{
     height: 130px;
     width: 150px;
-    background-image: url(images/atoms.webp);
     background-size: cover;
     background-position: center;
 }
